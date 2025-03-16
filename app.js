@@ -1,14 +1,17 @@
-// El principal objetivo de este desafío es fortalecer tus habilidades en lógica de programación. Aquí deberás desarrollar la lógica para resolver el problema.
-
 let nombreAmigos = [];
 
-function agregarAmigos(amigo) {
+function agregarAmigos() {
     let input = document.getElementById("amigo");
-    let nombre = input.value;
+    let nombre = input.value.trim();
+    let resultado = document.getElementById("resultado");
+
     if (nombre === "") {
-        alert("Por favor, ingresa un nombre válido.");
+        resultado.textContent = "⚠️ Por favor, ingresa un nombre válido.";
+        resultado.style.color = "red";
         return;
     }
+
+    resultado.textContent = "";
     nombreAmigos.push(nombre);
     limpiarCaja();
     mostrarEnPantalla();
@@ -19,14 +22,20 @@ function limpiarCaja() {
     valorCaja.value = "";
 }
 
-// Funcion que busca un amigo al azar seleccionandolo un número del indice en el arreglo Let nombreAmigos, también tirá un alert si no hay amigos agregados y sale de la funcion
 function amigoAlAzar() {
+    let resultado = document.getElementById("resultado");
+
     if (nombreAmigos.length === 0) {
-        alert("¡Aún no has agregado ningún amigo!");
+        resultado.textContent = "¡Aún no has agregado ningún amigo!";
+        resultado.style.color = "red";
         return;
     }
+
     let indice = Math.floor(Math.random() * nombreAmigos.length);
-    alert("El amigo elegido es: " + nombreAmigos[indice]);
+    let amigoSeleccionado = nombreAmigos[indice];
+
+    resultado.textContent = `El amigo elegido es: ${amigoSeleccionado}`;
+    resultado.style.color = "black";
 }
 
 function mostrarEnPantalla(){
