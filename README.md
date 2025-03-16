@@ -4,21 +4,18 @@ Descripción de su proyecto: El challenge amigo imaginario buscaba hacer uso de 
 
 Funcionalidades: Su función es la de hacer un sorteo entre un grupo de amigos para bridarle al ganador algún tipo de premio (o castigo jaj).
 
-Cómo pueden usarlo los usuarios: Los usuarios pueden ingresar al HTML del proyecto e interactuar con el botón de agregar amigos para ir haciendo una lista, si no agregan nada y pulgan el botón el mismo tirará un mensaje de error, el cual fue cambiado del típico alert a un mensaje directamente en el html para no ser tan molesto. Al tener la lista completa se puede sortear uno de los nombres el cual también aparecerá directamente en el html.
+Cómo pueden usarlo los usuarios: 
+![Screenshot_44](https://github.com/user-attachments/assets/df5e83d6-6672-495b-9267-08254b3399c7)
+![Screenshot_45](https://github.com/user-attachments/assets/278ff757-a7cb-4123-ba30-84f6fb28c8bb)
+![Screenshot_46](https://github.com/user-attachments/assets/3ad285be-48a9-4a27-9829-b65a4ef25bf0)
 
 Donde los usuarios pueden encontrar ayuda sobre su proyecto: Aquí, en el archivo README XD o enviandome un mail a Rodrigo_v92@outlook.com, saludos.
 
 Autores del proyecto: Vera Rodrigo
 
-Empezamos en ésto:
-![Screenshot_37](https://github.com/user-attachments/assets/e6a8c299-2d59-4eca-a82b-a3273a0f875d)
+¿Cómo fue el proceso?
 
-Y terminamos en ésto:
-![Screenshot_35](https://github.com/user-attachments/assets/91ea915e-cd2a-443f-84d3-a1c3065295d1)
-
-¿Cómo?
-
-Facil en primera instancia tenemos una variable que almacena los nombres en un array.
+Fácil en primera instancia tenemos una variable que almacena los nombres en un array.
 ![Screenshot_38](https://github.com/user-attachments/assets/cd48690b-7d97-4ebe-b76a-ef8f7262ecc2)
 
 Seguido tenemos una función que obtiene el valor ingresado en el campo de texto (el nombre que introducimos cada uno a la lista), lo valida (evita nombres vacíos), lo guarda en el array y lo muestra en pantalla.
